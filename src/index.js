@@ -21,7 +21,10 @@ const store = createStore(rootReducer,
 
 const rrfProps = {
   firebase: fbConfig,
-  config: {},
+  config: {
+    useFirestoreForProfile: true,
+    userProfile: 'users'
+  },
   dispatch: store.dispatch,
   createFirestoreInstance
 }
